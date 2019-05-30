@@ -1,0 +1,10 @@
+login:
+    path: /login
+    controller: App\Controller\LoginController::index
+    methods: [POST]
+
+request:
+    path: /api/{resourceType}/{resourceId}
+    controller: App\Controller\ApiController::index
+    methods: [GET]
+

@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 12px;
+  max-width: 350px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  width: 200px;
+  background: #267726;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #134b13;
+}
+
+button:active {
+  background: #40c040;
+}

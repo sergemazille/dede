@@ -1,0 +1,18 @@
+{
+  "__comment": "Fichier de configuration de VS Code",
+
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "root/*": ["./*"],
+      "dist/*": ["dist/*"],
+      "scripts/*": ["src/scripts/*"],
+      "webPageForms/*": ["src/WebPageForms/*"],
+      "components/*": ["src/components/*"],
+      "store/*": ["src/store/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "ancillary"]
+}

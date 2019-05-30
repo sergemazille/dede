@@ -1,0 +1,17 @@
+/dist
+/build
+/node_modules
+
+# Server
+###> symfony/framework-bundle ###
+/ancillary/server/.env.local
+/ancillary/server/.env.local.php
+/ancillary/server/.env.*.local
+/ancillary/server/public/bundles/
+/ancillary/server/var/
+/ancillary/server/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/web-server-bundle ###
+/ancillary/server/.web-server-pid
+###< symfony/web-server-bundle ###

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cas 1 : utilisateur -->
+    <form action="" id="users">
+      <h3>Formulaire de type "Users"</h3>
+      <input type="text" placeholder="Prénom" id="firstName" />
+      <input type="text" placeholder="Nom" id="lastName" />
+      <input type="text" placeholder="Email" id="email" />
+      <input type="text" placeholder="Site web" id="website" />
+    </form>
+
+    <!-- cas 2 : commentaire -->
+    <form action="" id="comments">
+      <h3>Formulaire de type "Comments"</h3>
+      <input type="text" placeholder="Nom" id="name" />
+      <input type="text" placeholder="Email" id="email" />
+      <textarea id="body" placeholder="Commentaire"></textarea>
+    </form>
+
+    <button>Valider</button>
+
+    <script>
+      // On ne garde aléatoirement qu'un des deux formulaires à la génération de la page
+      const random = Math.random();
+      const deletedForm =
+        random < 0.5
+          ? document.querySelector("#users")
+          : document.querySelector("#comments");
+
+      document.body.removeChild(deletedForm);
+    </script>
+  </body>
+</html>
